@@ -25,11 +25,11 @@ public class WebdriverUtils {
 
             switch (browserType.toLowerCase()){
                 case "firefox" :
-                    System.setProperty("webdriver.gecko.driver" , "C:/Users/innoc/OneDrive/Desktop/techlead project/Selenium/Drivers/chromedriver.exe");
+                    System.setProperty("webdriver.gecko.driver" , "C:/Users/innoc/OneDrive/Desktop/techlead project/Selenium/Drivers/geckodriver.exe");
                     driver = new FirefoxDriver();
                     break;
                 default:
-                    System.setProperty("webdriver.chrome.driver" , "C:/Users/innoc/OneDrive/Desktop/techlead project/Selenium/Drivers/geckodriver.exe");
+                    System.setProperty("webdriver.chrome.driver" , "C:/Users/innoc/OneDrive/Desktop/techlead project/Selenium/Drivers/chromedriver.exe");
                     driver = new ChromeDriver();
                     break;
             }
